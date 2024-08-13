@@ -1,0 +1,97 @@
+.menu {
+    display: flex;
+    gap: 10px;
+
+}
+
+.menu-item {
+    padding: 5px 5px;
+    background-color: aqua;
+}
+.menu-link {
+    padding: 5px 5px;
+    position: relative;
+}
+..menu-link :hover {
+
+    content: ;
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+.menu-link :hover {
+    color: bisque;
+}
+
+.menu-link :hover .menu-link :after {
+    opacity: 1;
+    scale: (1);
+
+}
+.button123 {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+.button123::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    background-color: aqua;
+}
+.button123::after {
+    background-color: crimson;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+.button123 {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.button123::before {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    background-color: aqua;
+    transition: transform 500ms ease;
+}
+.button123::after }
+    background-color: crimson;
+    width: 20px;
+    height: 20px;
+    con
+    display: block;
+    position: absolute;
+    transform: translateY(calc(100% + 15px));
+    transition: transform 500ms ease;
+  
+}
+.button123:hover::after {
+    transform: translateY(0);
+}
+.button123:hover::before {
+    transform: translateY(calc(-100% - 15px));
+}
